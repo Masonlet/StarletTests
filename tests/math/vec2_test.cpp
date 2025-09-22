@@ -267,6 +267,14 @@ TEST(Vec2Test, DotProduct) {
 
 TEST(Vec2Test, UnaryMinus) {
 	Vec2<int> vi(1, -1);
-	Vec2<int> vNeg = -vi;
-	ASSERT_EQ(vNeg.x, -1); ASSERT_EQ(vNeg.y, 1);
+	Vec2<float> vf(1.1f, -1.1f);
+	Vec2<double> vd(1.1, -1.1);
+
+	Vec2<int> viNeg = -vi;
+	Vec2<float> vfNeg = -vf;
+	Vec2<double> vdNeg = -vd;
+
+	ASSERT_EQ(viNeg.x, -1); ASSERT_EQ(viNeg.y, 1);
+	ASSERT_FLOAT_EQ(vfNeg.x, -1.1f); ASSERT_FLOAT_EQ(vfNeg.y, 1.1f); 
+	ASSERT_DOUBLE_EQ(vdNeg.x, -1.1); ASSERT_DOUBLE_EQ(vdNeg.y, 1.1); 
 }
