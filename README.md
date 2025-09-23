@@ -2,7 +2,7 @@
 A repository containing unit tests for **Starlet** libaries. Tests are written using **Google Test** (gtest) and cover basic operations, edge cases, and mathematical correctness.
 
 ## Features
-- Unit tests for `Vec2` operations in **StarletMath**
+- Unit tests for `Vec2`, `Vec3`, and `Vec4` operations in **StarletMath**
 - Supports `int`, `float`, and `double` types
 
 ## Building and Running Tests

@@ -218,7 +218,6 @@ TEST(Vec3Test, LengthSquared) {
 	ASSERT_DOUBLE_EQ(vd.lengthSquared(), 50.0);
 }
 
-
 TEST(Vec3Test, Normalize) {
 	Vec3<int> vi(4, 4, 2);
 	Vec3<float> vf(4.0f, 4.0f, 2.0f);
